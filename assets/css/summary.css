@@ -1,0 +1,21 @@
+.summary__par{
+    font-size: 16px;
+    color: var(--color7);
+    line-height: 40px;
+}
+
+.summary__par > span{
+    color: var(--color8);
+}
+
+.summary__list{
+    list-style-type: disc;
+    list-style-position: inside;
+    margin-bottom: 32px;
+}
+
+.summary__item{
+    font-size: 16px;
+    color: var(--color8);
+    margin-bottom: 8px;
+}

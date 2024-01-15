@@ -1,0 +1,103 @@
+/* contents */
+.form_register__input_content{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+}
+
+.form_register__input_content.button{
+    justify-content: center;
+    align-items: center;
+}
+
+.form_register__checkbox_content{
+    position:relative;
+    margin-bottom: 16px;
+}
+
+/* normal labels and inputs */
+.form_register__label{
+    margin-bottom: 12px;
+    font-size: 12px;
+    font-weight: bold;
+    color: var(--color7);
+}
+
+.form_register__input{
+    font-size: 12px;
+    color: var(--color7);
+    border: 2px solid var(--color6);
+    background-color: var(--color4);
+    padding: 16px;
+    border-radius: 12px;
+}
+
+/* span validator*/
+.form_register__span{
+    margin-top: 8px;
+    color: var(--color8);
+}
+
+.form_register__span.--hidden{
+    visibility: hidden;
+}
+
+
+
+/* submit */
+
+.form_register__submit{
+    margin-top: 8px;
+    color: var(--color8);
+    background-color: var(--color2);
+    width:120px;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* radio */
+.form_register__checkbox{
+    -webkit-appearance: none;
+    width: 100%;
+    height: 50px;
+    border: 2px solid var(--color6);
+    background-color: var(--color4);
+    /* padding: 16px; */
+    color: var(--color6);
+    border-radius: 12px;
+    cursor:pointer;
+}
+
+.form_register__checkbox:checked{
+    background-color: var(--color1);
+}
+
+.form_register__checkbox::before{
+    content: "hauhauha";
+    /* font-weight: bold; */
+    color: var(--color6);
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.form_register__checkbox.resposta1::before{
+    content: "Software Development";
+}
+
+.form_register__checkbox.resposta2::before{
+    content: "User Experience";
+}
+
+.form_register__checkbox.resposta3::before{
+    content: "Graphic Design";
+}
+
+.form_register__checkbox:checked:before{
+    font-weight: bold;
+    color: #FFF;
+}
+

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-step Register Form</title>
+
+    <link rel="stylesheet" href="./assets/css/base/base.css">
+    <link rel="stylesheet" href="./assets/css/step_content.css">
+    <link rel="stylesheet" href="./assets/css/form_register.css">
+    <link rel="stylesheet" href="./assets/css/summary.css">
+    <link rel="stylesheet" href="./assets/css/step_count.css">
+    
+    
+</head>
+<body>
+    <main class="main_content">
+        <section class="step_panel">
+            <form action="" class="form_register" data-form>
+                <!-- step 1 -->
+                <article class="step_content" id="step1">
+                    <h2 class="step_title">Register</h2>
+                    <p class="form_register__input_content">
+                        <label for="name" class="form_register__label">Name</label>
+                        <input type="text" name="name" placeholder="enter your name" class="form_register__input" data-input="name">
+                        <span class="form_register__span --hidden">Name field must be filled in</span>
+                    </p>
+    
+                    <p class="form_register__input_content">
+                        <label for="email" class="form_register__label">Email</label>
+                        <input type="email" name="email" placeholder="example@gmail.com" class="form_register__input" data-input="email">
+                        <span class="form_register__span --hidden">Email address must be valid</span>
+                    </p>
+    
+                    <p class="form_register__input_content button">
+                        <button class="form_register__submit" data-btn="step1">Continue</button>
+                    </p>
+                </article>
+
+                <!-- step 2 -->
+                <article class="step_content --disable" id="step2">
+                    <h2 class="step_title">Which topics you are interested in?</h2>
+                    <p class="form_register__checkbox_content">
+                        <input type="checkbox" class="form_register__checkbox resposta1" name="fav_language" value="Software Development" data-input="checkbox">
+                    </p>
+    
+                    <p class="form_register__checkbox_content">
+                        <input type="checkbox" class="form_register__checkbox resposta2" name="fav_language" value="User Experience" data-input="checkbox">
+                    </p>
+    
+                    <p class="form_register__checkbox_content">
+                        <input type="checkbox" class="form_register__checkbox resposta3" name="fav_language" value="Graphic Design" data-input="checkbox">
+                        <span class="form_register__span --hidden">At least one field must be selected</span>
+                    </p>
+                
+                    <p class="form_register__input_content button">
+                        <input type="submit" class="form_register__submit" value="Continue">
+                    </p>
+                </article>
+            </form>
+
+            <!-- step 3 -->
+            <article class="step_content --disable" id="step3">
+                <h2 class="step_title">Summary</h2>
+                <p class="summary__par">
+                    Name: <span data-show-name>Example Name</span><br>
+                    Email: <span data-show-email>example@example.com.br</span><br><br>
+
+                    Topics:<br>
+                    <ul class="summary__list" data-show-list>
+                        <!-- <li class="summary__item">hauhauha</li>
+                        <li class="summary__item">hauhuahuahua</li>
+                        <li class="summary__item">hauahua</li> -->
+                    </ul>
+                </p>
+                <p class="form_register__input_content button">
+                    <button class="form_register__submit" data-btn="step3">Continue</button>
+                </p>
+            </article>
+        </section>
+
+        <!-- rodape onde mostra o step vigente -->
+        <section class="step_count">
+            Step <span class="step_count__number" data-step-count>1</span> of 3
+            <span class="step_count__circle_panel">
+                <div class="step_count__circle --selected" data-step-circle="1"></div>
+                <div class="step_count__circle" data-step-circle="2"></div>
+                <div class="step_count__circle" data-step-circle="3"></div>
+            </span>
+        </section>
+    </main>
+
+    <!-- esses dois elementos fazem parte do fundo da tela (luz roxa) -->
+    <div id="luz_fundo1"></div>
+    <div id="luz_fundo2"></div>
+</body>
+</html>
+
+<script src="./index.js" type="module"></script>
