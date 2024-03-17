@@ -4,7 +4,7 @@ Construção de um formulário de registro de 3 etapas com seções distintas. O
 
 Para conferir o resultado, clique [aqui](https://multi-step-register-form-flax.vercel.app/).
 
-A página do desafio pode ser acessada [aqui](https://devchallenges.io/challenge/35).
+A página do desafio pode ser acessada [aqui](https://devchallenges.io/challenge/qa-code-generator).
 
 ## Tecnologias utilizadas
 
